@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal App</title>
+    <link rel="stylesheet" href="/src/output.css" >
+  </head>
+  <body>
+  <header class="shadow-[0_2px_2px_rgba(0,0,0,0.25)] ">
+    <div id="counter" class="w-[90%] mx-auto flex justify-between h-[50px]" >
+    <div class="text-lg flex items-center px-5 font-medium poppins"><a href="/"><span >mealapp</span></a><span class="hidden size-0"></span></div>
+
+
+    <nav class="hidden md:block">
+    <ul class="flex items-center justify-evenly">
+    <li class="py-3 px-5 hover:text-[#c4c4c4] transition-colors duration-100">
+     <a  href="#">Home</a> </li>
+    <li class="py-3 px-5 hover:text-[#c4c4c4] transition-colors duration-100">
+     <a  href="#">Foods</a> </li>
+    <li class="py-3 px-5 hover:text-[#c4c4c4] transition-colors duration-100">
+     <a  href="#">Ingredients</a> </li>
+    <li class="py-3 px-5 hover:text-[#c4c4c4] transition-colors duration-100">
+     <a  href="#">Local Culinary</a> </li>
+    </ul>
+    </nav>
+ <button id="menu-button" class="md:hidden flex items items-center"><img class="size-6" src="../assets/menu.svg"/></button>
+
+    </div>
+    </div>
+  </header>
+<nav id="mobile-nav" class="absolute text-center w-full hidden">
+      <ul>
+        <li class="py-2 bg-white bg-opacity-70 hover:bg-opacity-100 ">
+          <a href="/">Home</a>
+        </li>
+        <li class="py-2 bg-white bg-opacity-70 hover:bg-opacity-100 ">
+          <a href="#">Foods</a>
+        </li>
+        <li class="py-2 bg-white bg-opacity-70 hover:bg-opacity-100 ">
+          <a href="#">Ingredients</a>
+        </li>
+        <li class="py-2 bg-white bg-opacity-70 hover:bg-opacity-100 ">
+          <a href="#">Local Culinary</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="app">
+
+    </div>
+    <img id="loading" src="/loading.svg" alt="loading" class="w-24 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"/>
+    <script type="module" src="/src/pages/mealDetail.js"></script>
+  </body>
+</html>
